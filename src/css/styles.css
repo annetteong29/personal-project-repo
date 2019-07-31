@@ -1,0 +1,94 @@
+/*----------- Navigation menu button -----------*/
+.menu-button {
+    position: relative;
+    height: 70px;
+    min-width: 100px;
+    max-width: 140px;
+    padding: 0;
+    border-radius: 0;
+    flex: 1;
+  
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    color: grey;
+  
+    transition: all linear 100ms;
+    overflow-y: hidden;
+    line-height: 20px;
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+  }
+  
+  .menu-button svg {
+    margin-top: 8px;
+  }
+  
+  .menu-button:hover,
+  .menu-button.selected {
+    background-color: #272727;
+    color: white;
+  }
+
+  /*----------- Navgiation bar -----------*/
+.nav-bar-container {
+    background-color: #303030;
+  }
+  
+  .nav-bar-container,
+  .nav-bar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  
+  .nav-bar {
+    align-items: stretch;
+  }
+  
+  .right {
+    align-self: flex-end !important;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  
+  /*----------- Alex logo / Home button -----------*/
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    position: relative;
+    width: 235px;
+    height: 70px;
+    transition: all linear 300ms;
+  }
+  
+  .logo:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    height: 100%;
+    width: 0;
+    background-color: #202020;
+    transition: all 300ms;
+  }
+  
+  .logo:hover::before {
+    width: 100%;
+  }
+  
+  .logo:hover img {
+    margin-left: 45px;
+  }
+  
+  .logo img {
+    z-index: 20;
+    margin-left: 50px;
+    height: 50px;
+    transition: all 400ms;
+  }
